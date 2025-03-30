@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulip Themed Lyrics</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://images.unsplash.com/photo-1557929036-44a5d490d527?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80vh;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .image-container {
+            margin: 30px 15px 30px;
+            border-radius: 5px;
+            width: 60%;
+            background: url('/hello2.jpeg') no-repeat center center/cover;
+        }
+        .lyrics-container {
+            width: 60%;
+            height: 300px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #d63384;
+        }
+        p {
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container"></div>
+        <div class="lyrics-container">
+            <h1>Delulu</h1>
+            <p>
+Her cheeks are soft like clouds unfound
+A giggle escapes as my head spins round
+She takes the lead bossing life like a queen
+Mad face cute like no anger’s seen
+
+Oh solulu for a delulu I swear
+Caught in her orbit without a care
+When her hand finds mine the world goes mute
+Everything ‘bout her is so damn cute
+
+Her gestures slay they’re sweet and wild
+She’s chaos soft she’s perfectly styled
+When she stomps her foot with a glare so fierce
+It’s love piercing through the atmosphere
+
+Oh solulu for a delulu I swear
+Caught in her orbit without a care
+When her hand finds mine the world goes mute
+Everything ‘bout her is so damn cute
+
+A hurricane smile melting my guard
+When she dances through life it hits so hard
+No map no compass can pull me free
+Lover’s a maze and she’s the key
+
+Holding hands it’s my favorite scene
+Her touch writes stories in places unseen
+A wink a nudge now my heart’s unbound
+In her
+This solulu has now been found
+            </p>
+        </div>
+    </div>
+    <button id="musicBtn">🎶 Play Music</button>
+    
+    <audio id="bgMusic" loop>
+        <source src="/hello.mpeg" type="audio/mpeg">
+    </audio>
+</body>
+</html>
+<script>
+    document.getElementById("musicBtn").addEventListener("click", function() {
+            var music = document.getElementById("bgMusic");
+            music.play();
+            this.style.display = "none"; // Hide button after clicking
+         });
+</script>
